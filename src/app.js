@@ -5,10 +5,10 @@ let when = ['before the class', 'when I was sleeping', 'while I was exercising',
 
 window.onload = function() {
   document.querySelector("#heading").innerHTML = 'OMG! you will not believe me but...';
-  document.querySelector("#excuse").innerHTML = random(who) + ' ' + random(action) + ' ' + random(what)+ ' '  + random(when)
+  document.querySelector("#excuse").innerHTML = getRandomWord(who) + ' ' + getRandomWord(action) + ' ' + getRandomWord(what)+ ' '  + getRandomWord(when)
 };
 
-function random(arrayWords){
+function getRandomWord(arrayWords){
   let min = 0;
   let max = arrayWords.length - 1;
   let randomNumber = getRandomNumber(min, max);
